@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 class Task1 {
 
-    static void swapObj(Object[] array, int firstIndex, int secondIndex) {
-        Object oneVal = array[firstIndex];
+    static <T> void swapObj(T[] array, int firstIndex, int secondIndex) {
+        T oneVal = array[firstIndex];
         array[firstIndex] = array[secondIndex];
         array[secondIndex] = oneVal;
     }
