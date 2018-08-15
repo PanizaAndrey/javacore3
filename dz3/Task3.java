@@ -53,7 +53,7 @@ public class Task3 {
 
     private static void cliPageReader() {
         try (InputStream in = new FileInputStream(FILE_PATH + "/" +
-                ".txt");
+                "book.txt");
              ByteArrayOutputStream book = new ByteArrayOutputStream()) {
             byte[] buff = new byte[CHARS_IN_PAGE];
             int len;
@@ -91,12 +91,12 @@ public class Task3 {
     public static void main(String[] args) {
 
         //Прочитать файл (около 50 байт) в байтовый массив и вывести этот массив в консоль
-        readAndPrintByteArray();
+//        readAndPrintByteArray();
 
         //Последовательно сшить 5 файлов в один (пишет в файл concat)
 //        merge();
 
         //Написать консольное приложение, которое умеет постранично читать текстовые файлы....
-//        cliPageReader();
+        cliPageReader();
     }
 }
